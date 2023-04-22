@@ -5,15 +5,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Chris Kayahara | Software Engineer</title>
+        <link rel="stylesheet" href="./styles/globals.css">
+        <link rel="stylesheet" href="./styles/index.css">
     </head>
     <body>
         <header class="header">
+            <a class="nav__home-link"><img class="nav__home-logo" src="./assets/logos/logo.png"></a>
             <nav class="nav">
-                <a class="nav__home-link"><img class="nav__home-logo"></a>
                 <ul class="nav__list">
-                    <li class="nav__item">
-                        <a class="nav__link">Home</a>
-                    </li>
                     <li class="nav__item">
                         <a class="nav__link">About</a>
                     </li>
@@ -28,6 +27,26 @@
                     </li>
                 </ul>
             </nav>
+
+            <div class="side-nav">
+                <input class="side-nav__checkbox" type="checkbox" name="side-nav__checkbox" id="side-nav__checkbox" />
+                <div class="side-nav__hamburger">
+                    <span class="side-nav__line side-nav__line1"></span>
+                    <span class="side-nav__line side-nav__line2"></span>
+                    <span class="side-nav__line side-nav__line3"></span>
+                </div>
+                <aside class="side-nav__container">
+                    <ul class="side-nav__list">
+                        <li class="side-nav__item"><a href="#">About</a></li>
+                        <li class="side-nav__item"><a href="#">Projects</a></li>
+                        <li class="side-nav__item"><a href="#">Skills</a></li>
+                        <li class="side-nav__item"><a href="#">Contact</a></li>
+                    </ul>
+                </aside>
+            </div>
+            
+
+
         </header>
         <main>
             <section class="hero">
