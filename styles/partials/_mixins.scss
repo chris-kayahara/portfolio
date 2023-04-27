@@ -1,0 +1,103 @@
+@use 'variables' as *;
+
+// Mixin rule for tablet breakpoint
+@mixin tablet {
+  @media screen and (min-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+// Mixin rule for desktop breakpoint
+@mixin desktop {
+  @media screen and (min-width: $desktop-breakpoint) {
+    @content;
+  }
+}
+
+// Mixin rules for font styles as per style guide
+@mixin page-header-mobile() {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+@mixin page-header-tablet-desktop() {
+  font-size: 3.75rem;
+  line-height: 4.25rem;
+  font-weight: 600;
+}
+
+@mixin section-header-mobile() {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+@mixin section-header-tablet-desktop() {
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  font-weight: 600;
+  margin-bottom: 2.25rem;
+}
+
+@mixin subheader-mobile() {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+@mixin subheader-tablet-desktop() {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  margin-top: 3rem;
+  margin-bottom: 2.25rem;
+}
+
+@mixin body-mobile() {
+  font-size: .8125rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+@mixin body-tablet-desktop() {
+  font-size: .875rem;
+  line-height: 1.375rem;
+  font-weight: 400;
+  margin-top: 1.5em;
+  margin-bottom: 1.5rem;
+}
+
+@mixin footer-mobile() {
+  font-size: .8125rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+}
+@mixin footer-tablet-desktop() {
+  font-size: .875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+}
+
+@mixin labels-buttons-mobile() {
+  font-size: .625rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+}
+@mixin labels-buttons-tablet-desktop() {
+  font-size: .75rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+}
+
+// Mixin rules for flex boxes
+@mixin flex-column() {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-row() {
+  display: flex;
+  flex-direction: row;
+}

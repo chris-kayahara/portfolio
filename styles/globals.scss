@@ -1,0 +1,80 @@
+@use "./partials/fonts";
+@use "./partials/variables" as *;
+@use "./partials/mixins" as *;
+
+html{
+    scroll-behavior: smooth;
+}
+
+// Global Styles
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    font-family: Helvetica, arial, sans-serif;
+    color: rgb(35, 35, 35);
+    overscroll-behavior-y: none;
+    overscroll-behavior-x: none;
+    animation: fadeInAnimation ease-in 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+main {
+    padding: 0 1.25rem 0 1.25rem;
+    max-width: 96rem;
+    margin: 0 auto;
+
+    @include tablet {
+        padding: 0 2rem 0 2rem;
+    }
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: $black;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+
+    @include tablet {
+        font-size: 4rem;
+    }
+}
+
+h2 {
+    
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+
+    @include tablet {
+        font-size: 3rem;
+    }
+}
+
+p {
+    margin-bottom: 1rem;
+    font-weight: 100;
+    line-height: 1.5rem;
+}
+
+.heading-accent{
+    color: $red;
+}
