@@ -15,21 +15,25 @@
         <!-- Header -->
         <header class="header">
             <div class="header__content">
-                <a class="nav__home-link"><img class="nav__home-logo" src="./assets/logos/logo.png"></a>
+                <a class="nav__home-link" href="./index.html">
+                    <h3 class="nav__home-logo-text">CK</h3>
+                    <div class="nav__home-highlight"></div>
+                    <!-- <img class="nav__home-logo" src="./assets/logos/logo.svg"> -->
+                </a>
                 <!-- Nav -->
                 <nav class="nav">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a class="nav__link">About</a>
+                            <a class="nav__link" href="#about">About</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link">Projects</a>
+                            <a class="nav__link" href="#projects">Projects</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link">Skills</a>
+                            <a class="nav__link" href="#skills">Skills</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link">Contact</a>
+                            <a class="nav__link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -44,18 +48,22 @@
                     <aside class="side-nav__container">
                         <ul class="side-nav__list">
                             <li class="side-nav__item">
-                                <a class="side-nav__link" href="#">About</a>
+                                <a class="side-nav__link" href="#about">About</a>
                             </li>
                             <li class="side-nav__item">
-                                <a class="side-nav__link" href="#">Projects</a>
+                                <a class="side-nav__link" href="#projects">Projects</a>
                             </li>
                             <li class="side-nav__item">
-                                <a class="side-nav__link" href="#">Skills</a>
+                                <a class="side-nav__link" href="#skills">Skills</a>
                             </li>
                             <li class="side-nav__item">
-                                <a class="side-nav__link" href="#">Contact</a>
+                                <a class="side-nav__link" href="#contact">Contact</a>
                             </li>
+                            <!-- <li class="side-nav__item">
+                                <a href="mailto:kayahara.christopher@gmail.com">kayahara.christopher@gmail.com</a>
+                            </li> -->
                         </ul>
+
                     </aside>
                 </div>
             </div>
@@ -66,45 +74,57 @@
 
             <!-- Hero -->
             <section class="hero">
-                <h3 class="hero__name"><span class="heading-accent">| </span>Chris Kayahara</h3>
+                <h3 class="hero__name">
+                    <!-- <span class="heading-accent">| </span> -->
+                    Chris Kayahara</h3>
                 <h1 class="hero__heading">Software Engineer</h1>
-                <div class="hero__scroll-container">
-                    <h2 class="hero__scroll-arrow">&#8595;</h2>
-                    <!-- <p class="hero__scroll-text">Scroll</p> -->
+                <div class="hero__arrow">
+                    <div class="hero__arrow-leader"></div>
+                    <div class="hero__arrow-head"></div>
                 </div>
             </section>
 
             <!-- About -->
-            <section class="about reveal">
-                <h2 class="about__heading"><span class="heading-accent">| </span>About</h2>
-                <div class="about__content-container">
-                    <img class="about__profile-pic" src="./assets/images/Chris_Kayahara_Profile.jpg" alt="profile picture">
-                    <p class="about__text">Hi! My name is Chris and I love to make things that people can use, interact with and enjoy. I am a full-stack software engineer who has transitioned from the field of architecture into technology. With my creative, technical and professional experience in architecture, I will be able to utilize new knowledge gained from the BrainStation Software Engineering Bootcamp in order to excel in the field of technology and software development.
-                    </p>
+            <section class="about reveal" id="about">
+                <h2 class="about__heading">About</h2>
+                <div class="about__background">
+                    <div class="about__content-container">
+                        <img class="about__profile-pic" src="./assets/images/Chris_Kayahara_Profile.jpg" alt="profile picture">
+                        <p class="about__text">Greetings!<br/><br/>My name is Chris and I love to make things that people can use, interact with and enjoy. I am a full-stack software engineer who has transitioned from the field of architecture into technology. With my creative, technical and professional experience in architecture, I will be able to utilize new knowledge gained from the BrainStation Software Engineering Bootcamp in order to excel in the field of technology and software development.
+                        </p>
+                    </div>
                 </div>
             </section>
 
             <!-- Projects -->
-            <section class="projects">
-                <h2 class="projects__heading reveal"><span class="heading-accent">| </span>Projects</h2>
+            <section class="projects" id="projects">
+                <h2 class="projects__heading reveal">Projects</h2>
                 <div class="projects__card-container">
                     <article class="projects__card reveal">
-                        <img class="projects__card-image" src="./assets/images/dummy_525x290.png" alt="MapBook">
+                        <div class="projects__card-image-shadow">
+                            <img class="projects__card-image" src="./assets/images/mapbook-demo.png" alt="MapBook">
+                        </div>
                         <h3 class="projects__card-heading">MapBook</h3>
                         <p class="projects__card-text">A full stack app that allows users to create their own scrapbook-style gallery with image descriptions, paired with a map snippet based on the photo’s GPS data.</p>
                     </article>
                     <article class="projects__card reveal">
-                        <img class="projects__card-image" src="./assets/images/dummy_525x290.png" alt="Planet Jumper">
+                        <div class="projects__card-image-shadow">
+                            <img class="projects__card-image" src="./assets/images/planetjumper-demo.png" alt="MapBook">
+                        </div>
                         <h3 class="projects__card-heading">Planet Jumper</h3>
                         <p class="projects__card-text">A children's planetary education page which gathers planet data from Solar System OpenData web API.</p>
                     </article>
                     <article class="projects__card reveal">
-                        <img class="projects__card-image" src="./assets/images/dummy_525x290.png" alt="Instock">
+                        <div class="projects__card-image-shadow">
+                            <img class="projects__card-image" src="./assets/images/instock-warehouse.png" alt="MapBook">
+                        </div>
                         <h3 class="projects__card-heading">Instock</h3>
                         <p class="projects__card-text">A full stack inventory management system, featuring MySQL database and full React app front-end.</p>
                     </article>
                     <article class="projects__card reveal">
-                        <img class="projects__card-image" src="./assets/images/dummy_525x290.png" alt="Pokemon Team Generator">
+                        <div class="projects__card-image-shadow">
+                            <img class="projects__card-image" src="./assets/images/ptg-demo.png" alt="MapBook">
+                        </div>
                         <h3 class="projects__card-heading">Pokemon Team Generator</h3>
                         <p class="projects__card-text">A front-end application which take pokemon data from the PokeAPI to generate a random team of six.</p>
                     </article>
@@ -116,8 +136,8 @@
             </section>
 
             <!-- Skills -->
-            <section class="skills reveal">
-                <h2 class="skills__heading"><span class="heading-accent">| </span>Skills</h2>
+            <section class="skills reveal" id="skills">
+                <h2 class="skills__heading">Skills</h2>
                 <div class="skills__container">
                     <div class="skills__section-container">
                         <h3 class="skills__sub-heading">Front-end</h3>
@@ -148,8 +168,8 @@
             </section>
 
             <!-- Contact -->
-            <section class="contact reveal">
-                <h2 class="contact__heading"><span class="heading-accent">| </span>Contact</h2>
+            <section class="contact reveal" id="contact">
+                <h2 class="contact__heading">Contact</h2>
                 <h3 class="contact__text">Let's make something together!</h3>
                 <a class="contact__email-link" href="mailto:kayahara.christopher@gmail.com">kayahara.christopher@gmail.com</a>
                 <div class="contact__icon-container">
