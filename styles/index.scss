@@ -44,11 +44,15 @@
         width: 80px;
         z-index: 9;
         position: relative;
-        margin-left: 0.5rem; 
+
         border-left: solid 3px $red; 
 
         &:hover .nav__home-highlight{
             width: 80px;
+        }
+
+        @include tablet {
+            margin-left: 0.5rem; 
         }
     }
     
@@ -195,7 +199,7 @@
     }
 
     &__list{
-        margin-left: 1.75rem;
+        margin-left: 1.25rem;
 
         list-style: none;
         display: flex;
@@ -233,26 +237,35 @@
 
     &__name{
         font-weight: 100;
-        font-size: 2rem;
+        font-size: 1.75rem;
         padding-bottom: 1rem;
         padding-left: 0.5rem;
-        margin-left: 8px;
+
         border-left: 3px $red solid;
+
+        @include tablet {
+            margin-left: 8px;
+        }
     }
 
     &__heading {
         margin:0;
-    }
+        margin-left: -0.5rem;
 
-
-
-    &__scroll-arrow{
-        margin: 0;
+        @include tablet {
+            margin: 0;
+        }
     }
 
     &__arrow{
         height: 3rem;
         position:relative;
+
+        margin-left: -0.5rem;
+
+        @include tablet {
+            margin: 0;
+        }
     }
 
     &__arrow-leader{
@@ -286,9 +299,13 @@
     scroll-margin-top: 8rem;
 
     &__heading {
-        margin-left: 0.5rem; 
+
         border-left: solid 3px $red; 
         padding-left: 0.5rem;
+
+        @include tablet {
+            margin-left: 0.5rem; 
+        }
     }
 
     &__background {
@@ -313,9 +330,8 @@
     }
 
     &__text{
-        font-size: 1.125rem;
-        margin-left: 1.625rem;
-        margin-right: 1rem;
+        // margin-left: 1.625rem;
+        // margin-right: 1rem;
         margin-top: -4rem;
         margin-bottom: 0;
         padding: 3rem 1.5rem 1.5rem 1.5rem;
@@ -324,6 +340,7 @@
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
         @include tablet{
+            font-size: 1.125rem;
             padding: 1.5rem 1.5rem 1.5rem 4.5rem;
             margin-top: 0;
             margin-left: -4rem;
@@ -331,7 +348,8 @@
     }
 
     &__profile-pic{
-        margin-left: -3rem;
+        margin-left: -2rem;
+        margin-right: -0.5rem;
         max-width: 25rem;
         border-radius: 4px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -348,22 +366,27 @@
     scroll-margin-top: 6rem;
 
     &__heading {
-        margin-left: 0.5rem; 
         border-left: solid 3px $red; 
         padding-left: 0.5rem;
+
+        @include tablet {
+            margin-left: 0.5rem; 
+        }
     }
 
     &__card-container{
-        margin-left: 0.75rem;
-        margin-right: 0.75rem;
+
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 1rem;
 
         @include tablet {
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
             justify-content: center;
             flex-direction: row;
             flex-wrap: wrap;
+            gap: 2rem;
         }
     }
 
@@ -413,17 +436,27 @@
     scroll-margin-top: 6rem;
 
     &__heading {
-        margin-left: 0.5rem; 
+
         border-left: solid 3px $red; 
         padding-left: 0.5rem;
+        @include tablet {
+            margin-left: 0.5rem; 
+        }
     }
 
     &__container{
+        max-width: 20rem;
+        margin: 0 auto;
         display: flex;
         flex-direction: row;
-        gap: 3rem;
-        margin-left: 1.625rem;
-        margin-right: 1rem;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-top: 3rem;
+
+        @include tablet {
+
+            gap: 2rem;
+        }
     }
 
     &__sub-heading{
@@ -432,10 +465,91 @@
 
     &__list{
         list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     &__item{
         margin-bottom: 0.5rem;
+    }
+    
+
+    &__logo-container{
+        // position: relative;
+        // width: 200%;
+        // overflow: hidden;
+        // z-index: 1;
+        // margin: 0;
+        // padding: 0;
+        position: relative;
+        max-width: 60rem;
+        overflow: hidden;
+        z-index: 1;
+        margin: 0 auto;
+        padding: 0;
+
+    }
+
+    &__logo-row-left-mask{
+        width: 100px;
+        content:'';
+        display:block;
+        position:absolute;
+        top:0;
+        left:0;
+        background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+        height:100%;
+        z-index: 9;
+    }
+
+    &__logo-row-right-mask{
+        width: 100px;
+        content:'';
+        display:block;
+        position:absolute;
+        top:0;
+        right:0;
+        background: linear-gradient(to left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+        height:100%;
+        z-index: 9;
+    }
+
+    &__logo-row{
+        // overflow: hidden;
+        // height: 100%;
+        // white-space: nowrap;
+        // animation: scrollText 10s infinite linear;
+        // margin: 0;
+        // font-size: 0;
+        // display: flex;
+        // justify-content: space-between;
+        // width: 100%;
+        overflow: hidden;
+        height: 100%;
+        white-space: nowrap;
+        animation: scrollText 10s infinite linear;
+        margin: 0;
+        font-size: 0;
+        display: flex;
+        justify-content: space-between;
+        width: fit-content;
+    }
+
+    &__logo-wrap{
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        color: white;
+    }
+
+    &__logo{
+        height: 3rem;
+        margin-right: 2rem;
+        // display: inline-block;
+        // margin: 0;
+        // padding: 0;
+        // color: white;
     }
 }
 
@@ -443,13 +557,16 @@
     margin-bottom: 3rem;
 
     &__heading {
-        margin-left: 0.5rem; 
         border-left: solid 3px $red; 
         padding-left: 0.5rem;
+
+        @include tablet {
+            margin-left: 0.5rem; 
+        }
     }
 
     &__text{
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-bottom: 3rem;
         text-align: center;
         font-weight: 100;
@@ -457,10 +574,10 @@
 
     &__email-link{
         font-weight: 400;
-        font-size: 1.375rem;
+        font-size: 1rem;
         padding: 0.25rem;
         border-bottom: 2px solid $red;
-        width: 22rem;
+        width: 16rem;
         margin: 0 auto;
         margin-bottom: 1rem;
         display: block;
@@ -481,7 +598,6 @@
 }
 
 .footer {
-    background-color: rgb(250, 250, 250);
     border-top: 1px solid grey;
     width: 100%;
     text-align: left;
@@ -538,3 +654,12 @@
       transform: translateY(0);
     }
   }
+
+@keyframes scrollText {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
