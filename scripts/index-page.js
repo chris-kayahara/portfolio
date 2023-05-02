@@ -6,7 +6,6 @@ function reveal() {
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
       var elementTop = reveals[i].getBoundingClientRect().top;
-      // console.log(`windowHeight: ${windowHeight}, elementTop: ${elementTop}`)
   
       if (elementTop < windowHeight) {
         reveals[i].classList.add("active");
@@ -72,7 +71,6 @@ sideNavCheckbox.addEventListener('change', function() {
 });
 
 const sideNavLinks = document.querySelectorAll('.side-nav__item')
-console.log(sideNavLinks);
 
 for (let i = 0; i < sideNavLinks.length; i++) {
   sideNavLinks[i].addEventListener("click", () => {
