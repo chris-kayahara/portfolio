@@ -498,14 +498,27 @@
   text-align: center;
   font-weight: 100;
 }
+.contact__email-link-underline {
+  margin: 0 auto;
+  height: 2px;
+  width: 0;
+  background-color: rgb(240, 40, 26);
+  transition: width 1s ease-in-out;
+}
+.contact__email-link-underline-animation {
+  width: 16rem;
+}
+@media screen and (min-width: 48rem) {
+  .contact__email-link-underline-animation {
+    width: 24rem;
+  }
+}
 .contact__email-link {
   font-weight: 400;
   font-size: 1rem;
   padding: 0.25rem;
-  border-bottom: 2px solid rgb(240, 40, 26);
   width: 16rem;
   margin: 0 auto;
-  margin-bottom: 1rem;
   display: block;
   text-align: center;
 }
@@ -516,6 +529,7 @@
   }
 }
 .contact__icon-container {
+  margin-top: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: center;

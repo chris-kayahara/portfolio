@@ -1,8 +1,10 @@
+var emailLinkLine = document.querySelector(".contact__email-link-underline")
 
 // Function for scroll reveals
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
     var headingLines = document.querySelectorAll(".heading-line");
+
   
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
@@ -11,7 +13,7 @@ function reveal() {
       if (elementTop < windowHeight) {
         reveals[i].classList.add("active");
       } else {
-        reveals[i].classList.remove("active");
+        // reveals[i].classList.remove("active");
       }
     }
 
@@ -22,31 +24,18 @@ function reveal() {
       if (elementTop < windowHeight - 200) {
         headingLines[i].classList.add("heading-animation");
       } else {
-        headingLines[i].classList.remove("heading-animation");
+        // headingLines[i].classList.remove("heading-animation");
       }
     }
-    
   }
 
 window.addEventListener("scroll", reveal);
 
-// Remove the transition for the heading animation
-const headingLine = document.querySelector('.heading-line');
-headingLine.classList.remove('heading-animation');
-
-// Create the observer
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      headingLine.classList.add('heading-animation');
-      return;
-    }
-
-    square.classList.remove('heading-animation');
-  });
-});
-
-observer.observe(document.querySelector('.heading-container'));
+window.onscroll = function(ev) {
+  if ((window.innerHeight + Math.round(window.scrollY)) >= document.body.offsetHeight) {
+    emailLinkLine.classList.add("contact__email-link-underline-animation");
+  }
+};
 
 // left: 37, up: 38, right: 39, down: 40,
 // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
