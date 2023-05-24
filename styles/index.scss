@@ -302,16 +302,6 @@
         margin-bottom: 6rem;
     }
 
-    &__heading {
-
-        border-left: solid 3px $red; 
-        padding-left: 0.5rem;
-
-        @include tablet {
-            margin-left: 0.5rem; 
-        }
-    }
-
     &__background {
         // background-color:rgb(188, 188, 188);
         // z-index: 0;
@@ -371,15 +361,6 @@
 
     @include tablet {
         margin-bottom: 6rem;
-    }
-
-    &__heading {
-        border-left: solid 3px $red; 
-        padding-left: 0.5rem;
-
-        @include tablet {
-            margin-left: 0.5rem; 
-        }
     }
 
     &__card-container{
@@ -443,15 +424,6 @@
         margin-bottom: 6rem;
     }
 
-    &__heading {
-
-        border-left: solid 3px $red; 
-        padding-left: 0.5rem;
-        @include tablet {
-            margin-left: 0.5rem; 
-        }
-    }
-
     &__container{
         margin: 0 auto;
         display: flex;
@@ -467,7 +439,8 @@
     }
 
     &__section-container {
-
+        width: 16rem;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -477,6 +450,7 @@
         padding: 1rem;
 
         @include tablet {
+            margin: 0;
             width: 12rem;
         }
     }
@@ -560,15 +534,6 @@
 .contact {
     margin-bottom: 3rem;
 
-    &__heading {
-        border-left: solid 3px $red; 
-        padding-left: 0.5rem;
-
-        @include tablet {
-            margin-left: 0.5rem; 
-        }
-    }
-
     &__text{
         font-size: 1.5rem;
         margin-bottom: 3rem;
@@ -576,14 +541,29 @@
         font-weight: 100;
     }
 
+    &__email-link-underline{
+        margin: 0 auto;
+        height: 2px;
+        width: 0;
+        background-color: $red;
+        transition: width 1s ease-in-out;
+    }
+
+    &__email-link-underline-animation{
+        width: 16rem;
+
+        @include tablet {
+            width: 24rem;
+        }
+    }
+
     &__email-link{
         font-weight: 400;
         font-size: 1rem;
         padding: 0.25rem;
-        border-bottom: 2px solid $red;
+        // border-bottom: 2px solid $red;
         width: 16rem;
         margin: 0 auto;
-        margin-bottom: 1rem;
         display: block;
         text-align: center;
 
@@ -594,6 +574,7 @@
     }
 
     &__icon-container{
+        margin-top: 1rem;
         display:flex;
         flex-direction: row;
         justify-content: center;
@@ -645,13 +626,13 @@
 @keyframes scroll-arrow-head {
     from {
         bottom: 18px;
-        transform: scaleY(0.75) rotate(45deg) ;
-        -webkit-transform: scaleY(0.75) rotate(45deg);
+        transform: rotate(45deg) ;
+        -webkit-transform: rotate(45deg);
     }
     to {
         bottom: -6px;
-        transform: scaleY(1.5) rotate(45deg) ;
-        -webkit-transform: scaleY(1.5) rotate(45deg);
+        transform: rotate(45deg) ;
+        -webkit-transform: rotate(45deg);
     }
 }
   

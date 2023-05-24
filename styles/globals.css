@@ -74,14 +74,42 @@ h1 {
   }
 }
 
+.heading-container {
+  display: flex;
+}
+
+.heading-line {
+  width: 3px;
+  height: 0px;
+  background-color: rgb(240, 40, 26);
+  transition: height 1s ease-in-out;
+}
+@media screen and (min-width: 48rem) {
+  .heading-line {
+    margin-left: 8px;
+  }
+}
+
+.heading-animation {
+  height: 45px;
+}
+@media screen and (min-width: 48rem) {
+  .heading-animation {
+    height: 71px;
+  }
+}
+
 h2 {
+  padding-left: 0.5rem;
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   padding-bottom: 1rem;
 }
 @media screen and (min-width: 48rem) {
   h2 {
+    margin-bottom: 2rem;
     font-size: 3rem;
+    margin-left: 0.5rem;
   }
 }
 
