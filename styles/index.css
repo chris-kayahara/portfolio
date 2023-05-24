@@ -284,15 +284,6 @@
     margin-bottom: 6rem;
   }
 }
-.about__heading {
-  border-left: solid 3px rgb(240, 40, 26);
-  padding-left: 0.5rem;
-}
-@media screen and (min-width: 48rem) {
-  .about__heading {
-    margin-left: 0.5rem;
-  }
-}
 .about__content-container {
   margin: 0 auto;
   max-width: 60rem;
@@ -344,15 +335,6 @@
 @media screen and (min-width: 48rem) {
   .projects {
     margin-bottom: 6rem;
-  }
-}
-.projects__heading {
-  border-left: solid 3px rgb(240, 40, 26);
-  padding-left: 0.5rem;
-}
-@media screen and (min-width: 48rem) {
-  .projects__heading {
-    margin-left: 0.5rem;
   }
 }
 .projects__card-container {
@@ -410,15 +392,6 @@
     margin-bottom: 6rem;
   }
 }
-.skills__heading {
-  border-left: solid 3px rgb(240, 40, 26);
-  padding-left: 0.5rem;
-}
-@media screen and (min-width: 48rem) {
-  .skills__heading {
-    margin-left: 0.5rem;
-  }
-}
 .skills__container {
   margin: 0 auto;
   display: flex;
@@ -434,6 +407,8 @@
   }
 }
 .skills__section-container {
+  width: 16rem;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -444,6 +419,7 @@
 }
 @media screen and (min-width: 48rem) {
   .skills__section-container {
+    margin: 0;
     width: 12rem;
   }
 }
@@ -516,15 +492,6 @@
 .contact {
   margin-bottom: 3rem;
 }
-.contact__heading {
-  border-left: solid 3px rgb(240, 40, 26);
-  padding-left: 0.5rem;
-}
-@media screen and (min-width: 48rem) {
-  .contact__heading {
-    margin-left: 0.5rem;
-  }
-}
 .contact__text {
   font-size: 1.5rem;
   margin-bottom: 3rem;
@@ -596,13 +563,13 @@
 @keyframes scroll-arrow-head {
   from {
     bottom: 18px;
-    transform: scaleY(0.75) rotate(45deg);
-    -webkit-transform: scaleY(0.75) rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
   }
   to {
     bottom: -6px;
-    transform: scaleY(1.5) rotate(45deg);
-    -webkit-transform: scaleY(1.5) rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
   }
 }
 @keyframes slideInFromTop {
