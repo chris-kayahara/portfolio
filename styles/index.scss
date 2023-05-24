@@ -16,7 +16,7 @@
     }
 
     &__content{
-        max-width: 96rem;
+        max-width: 80rem;
         padding: 0 1.25rem;
         margin:0 auto;
         display: flex;
@@ -298,6 +298,10 @@
     margin-bottom: 3rem;
     scroll-margin-top: 8rem;
 
+    @include tablet {
+        margin-bottom: 6rem;
+    }
+
     &__heading {
 
         border-left: solid 3px $red; 
@@ -365,6 +369,10 @@
     margin-bottom: 3rem;
     scroll-margin-top: 6rem;
 
+    @include tablet {
+        margin-bottom: 6rem;
+    }
+
     &__heading {
         border-left: solid 3px $red; 
         padding-left: 0.5rem;
@@ -401,14 +409,10 @@
             width: 47%;
         }
 
-        @include desktop {
-            width: 23%;
-        }
     }
 
     &__card-image-shadow {
         width: 100%;
-
         box-shadow: rgba(50, 50, 93, 0.15) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.2) 0px 18px 36px -18px inset;
         border-radius: 4px;
         margin-bottom: 1rem;
@@ -435,6 +439,10 @@
     margin-bottom: 3rem;
     scroll-margin-top: 6rem;
 
+    @include tablet {
+        margin-bottom: 6rem;
+    }
+
     &__heading {
 
         border-left: solid 3px $red; 
@@ -445,22 +453,37 @@
     }
 
     &__container{
-        max-width: 20rem;
         margin: 0 auto;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
         gap: 1rem;
         margin-top: 3rem;
 
         @include tablet {
-
+            flex-direction: row;
             gap: 2rem;
         }
     }
 
+    &__section-container {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        border-radius: 4px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 1rem;
+
+        @include tablet {
+            width: 12rem;
+        }
+    }
+
     &__sub-heading{
-        margin-bottom: 1rem;
+        border-bottom: solid 2px rgb(240, 40, 26);
+        padding: 0.25rem;
     }
 
     &__list{
@@ -476,12 +499,6 @@
     
 
     &__logo-container{
-        // position: relative;
-        // width: 200%;
-        // overflow: hidden;
-        // z-index: 1;
-        // margin: 0;
-        // padding: 0;
         position: relative;
         max-width: 60rem;
         overflow: hidden;
@@ -516,15 +533,6 @@
     }
 
     &__logo-row{
-        // overflow: hidden;
-        // height: 100%;
-        // white-space: nowrap;
-        // animation: scrollText 10s infinite linear;
-        // margin: 0;
-        // font-size: 0;
-        // display: flex;
-        // justify-content: space-between;
-        // width: 100%;
         overflow: hidden;
         height: 100%;
         white-space: nowrap;
@@ -546,10 +554,6 @@
     &__logo{
         height: 3rem;
         margin-right: 2rem;
-        // display: inline-block;
-        // margin: 0;
-        // padding: 0;
-        // color: white;
     }
 }
 
@@ -582,6 +586,11 @@
         margin-bottom: 1rem;
         display: block;
         text-align: center;
+
+        @include tablet {
+            font-size: 1.5rem;
+            width: 24rem;
+        }
     }
 
     &__icon-container{
