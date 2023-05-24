@@ -33,7 +33,7 @@
   }
 }
 .header__content {
-  max-width: 96rem;
+  max-width: 80rem;
   padding: 0 1.25rem;
   margin: 0 auto;
   display: flex;
@@ -279,6 +279,11 @@
   margin-bottom: 3rem;
   scroll-margin-top: 8rem;
 }
+@media screen and (min-width: 48rem) {
+  .about {
+    margin-bottom: 6rem;
+  }
+}
 .about__heading {
   border-left: solid 3px rgb(240, 40, 26);
   padding-left: 0.5rem;
@@ -336,6 +341,11 @@
   margin-bottom: 3rem;
   scroll-margin-top: 6rem;
 }
+@media screen and (min-width: 48rem) {
+  .projects {
+    margin-bottom: 6rem;
+  }
+}
 .projects__heading {
   border-left: solid 3px rgb(240, 40, 26);
   padding-left: 0.5rem;
@@ -371,11 +381,6 @@
     width: 47%;
   }
 }
-@media screen and (min-width: 80rem) {
-  .projects__card {
-    width: 23%;
-  }
-}
 .projects__card-image-shadow {
   width: 100%;
   box-shadow: rgba(50, 50, 93, 0.15) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.2) 0px 18px 36px -18px inset;
@@ -400,6 +405,11 @@
   margin-bottom: 3rem;
   scroll-margin-top: 6rem;
 }
+@media screen and (min-width: 48rem) {
+  .skills {
+    margin-bottom: 6rem;
+  }
+}
 .skills__heading {
   border-left: solid 3px rgb(240, 40, 26);
   padding-left: 0.5rem;
@@ -410,21 +420,36 @@
   }
 }
 .skills__container {
-  max-width: 20rem;
   margin: 0 auto;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   gap: 1rem;
   margin-top: 3rem;
 }
 @media screen and (min-width: 48rem) {
   .skills__container {
+    flex-direction: row;
     gap: 2rem;
   }
 }
+.skills__section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 4px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 1rem;
+}
+@media screen and (min-width: 48rem) {
+  .skills__section-container {
+    width: 12rem;
+  }
+}
 .skills__sub-heading {
-  margin-bottom: 1rem;
+  border-bottom: solid 2px rgb(240, 40, 26);
+  padding: 0.25rem;
 }
 .skills__list {
   list-style: none;
@@ -516,6 +541,12 @@
   margin-bottom: 1rem;
   display: block;
   text-align: center;
+}
+@media screen and (min-width: 48rem) {
+  .contact__email-link {
+    font-size: 1.5rem;
+    width: 24rem;
+  }
 }
 .contact__icon-container {
   display: flex;
