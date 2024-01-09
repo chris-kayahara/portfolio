@@ -80,342 +80,367 @@
     <main>
       <!-- Hero -->
       <section class="hero">
-        <h3 class="hero__name">
-          <!-- <span class="heading-accent">| </span> -->
-          Chris Kayahara
-        </h3>
-        <h1 class="hero__heading">Software Engineer</h1>
-        <div class="hero__arrow">
-          <div class="hero__arrow-leader"></div>
-          <div class="hero__arrow-head"></div>
+        <div class="hero__content">
+          <h3 class="hero__name">
+            <!-- <span class="heading-accent">| </span> -->
+            Chris Kayahara
+          </h3>
+          <h1 class="hero__heading">Software Engineer</h1>
+          <div class="hero__arrow">
+            <div class="hero__arrow-leader"></div>
+            <div class="hero__arrow-head"></div>
+          </div>
         </div>
       </section>
 
       <!-- About -->
       <section class="about" id="about">
-        <div class="heading-container reveal">
-          <div class="heading-line"></div>
-          <h2>About</h2>
-        </div>
-        <div class="about__background reveal">
-          <div class="about__content-container">
-            <img
-              class="about__profile-pic"
-              src="./assets/images/Chris_Kayahara_Profile.jpg"
-              alt="profile picture of Chris Kayahara"
-            />
-            <p class="about__text">
-              Greetings!<br /><br />My name is Chris and I am a multi-faceted
-              professional with a passion for technology and design. With a
-              background in architecture, I am now transitioning to a career in
-              software engineering where I can bring a unique skill set to the
-              table, combining my expertise in design with my technical
-              knowledge. I am excited to continue to grow as a developer and
-              designer, and to create innovative solutions that merge creativity
-              and technology.
-            </p>
+        <div class="ribbon"></div>
+        <div class="about__content">
+          <div class="heading-container reveal">
+            <div class="heading-line"></div>
+            <h2 class="about__heading--white">About</h2>
+          </div>
+          <div class="about__background reveal">
+            <div class="about__content-container">
+              <img
+                class="about__profile-pic"
+                src="./assets/images/Chris_Kayahara_Profile.jpg"
+                alt="profile picture of Chris Kayahara"
+              />
+              <p class="about__text">
+                Greetings!<br /><br />My name is Chris and I am a multi-faceted
+                professional with a passion for technology and design. With a
+                background in architecture, I am now transitioning to a career
+                in software engineering where I can bring a unique skill set to
+                the table, combining my expertise in design with my technical
+                knowledge. I am excited to continue to grow as a developer and
+                designer, and to create innovative solutions that merge
+                creativity and technology.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Projects -->
       <section class="projects" id="projects">
-        <div class="heading-container reveal">
-          <div class="heading-line"></div>
-          <h2>Projects</h2>
-        </div>
-        <div class="projects__card-container">
-          <article class="projects__card reveal">
-            <div class="projects__card-image-shadow">
-              <img
-                class="projects__card-image"
-                src="./assets/images/mapbook-demo.png"
-                alt="MapBook screenshot"
-              />
-            </div>
-            <h3 class="projects__card-heading">MapBook</h3>
-            <p class="projects__card-text">
-              A full stack app that allows users to create their own
-              scrapbook-style gallery with image descriptions, paired with a map
-              snippet based on the photo’s GPS data.
-            </p>
-          </article>
-          <article class="projects__card reveal">
-            <div class="projects__card-image-shadow">
-              <img
-                class="projects__card-image"
-                src="./assets/images/planetjumper-demo.png"
-                alt="Planet Jumper screenshot"
-              />
-            </div>
-            <h3 class="projects__card-heading">Planet Jumper</h3>
-            <p class="projects__card-text">
-              A children's planetary education page which gathers planet data
-              from Solar System OpenData web API.
-            </p>
-          </article>
-          <article class="projects__card reveal">
-            <div class="projects__card-image-shadow">
-              <img
-                class="projects__card-image"
-                src="./assets/images/instock-warehouse.png"
-                alt="Instock screenshot"
-              />
-            </div>
-            <h3 class="projects__card-heading">Instock</h3>
-            <p class="projects__card-text">
-              A full stack inventory management system, featuring MySQL database
-              and full React app front-end.
-            </p>
-          </article>
-          <article class="projects__card reveal">
-            <div class="projects__card-image-shadow">
-              <img
-                class="projects__card-image"
-                src="./assets/images/ptg-demo.png"
-                alt="Pokemon Team Generator screenshot"
-              />
-            </div>
-            <h3 class="projects__card-heading">Pokemon Team Generator</h3>
-            <p class="projects__card-text">
-              A front-end application which take pokemon data from the PokeAPI
-              to generate a random team of six.
-            </p>
-          </article>
-          <!-- <article class="projects__card reveal">
-                        <h3 class="projects__card-heading">BrainFlix</h3>
-                        <p class="projects__card-text">A full stack video platform with mock upload and playback functionality.</p>
-                    </article> -->
+        <div class="projects__content">
+          <div class="heading-container reveal">
+            <div class="heading-line"></div>
+            <h2 class="projects__heading--white">Projects</h2>
+          </div>
+          <div class="projects__card-container">
+            <article class="projects__card reveal">
+              <a href="https://temporun.netlify.app/">
+                <div class="projects__card-image-shadow">
+                  <img
+                    class="projects__card-image"
+                    src="./assets/images/tempo-run.png"
+                    alt="Pokemon Team Generator screenshot"
+                  />
+                </div>
+              </a>
+              <a
+                href="https://temporun.netlify.app/"
+                class="projects__card-link"
+                id="tempo-run-link"
+              >
+                <h3 class="projects__card-heading">Tempo Run</h3>
+                <div class="projects__card-link-arrow"></div>
+              </a>
+              <p class="projects__card-text">
+                A React application which allows Spotify users to create jogging
+                playlists and run to the beat of their music.
+              </p>
+            </article>
+            <article class="projects__card reveal">
+              <div class="projects__card-image-shadow">
+                <img
+                  class="projects__card-image"
+                  src="./assets/images/mapbook-demo.png"
+                  alt="MapBook screenshot"
+                />
+              </div>
+              <h3 class="projects__card-heading">MapBook</h3>
+              <p class="projects__card-text">
+                A full stack app that allows users to create their own
+                scrapbook-style gallery with image descriptions, paired with a
+                map snippet based on the photo’s GPS data.
+              </p>
+            </article>
+            <article class="projects__card reveal">
+              <div class="projects__card-image-shadow">
+                <img
+                  class="projects__card-image"
+                  src="./assets/images/instock-warehouse.png"
+                  alt="Instock screenshot"
+                />
+              </div>
+              <h3 class="projects__card-heading">Instock</h3>
+              <p class="projects__card-text">
+                A full stack inventory management system, featuring MySQL
+                database and full React app front-end.
+              </p>
+            </article>
+            <article class="projects__card reveal">
+              <div class="projects__card-image-shadow">
+                <img
+                  class="projects__card-image"
+                  src="./assets/images/planetjumper-demo.png"
+                  alt="Planet Jumper screenshot"
+                />
+              </div>
+              <h3 class="projects__card-heading">Planet Jumper</h3>
+              <p class="projects__card-text">
+                A children's planetary education page which gathers planet data
+                from Solar System OpenData web API.
+              </p>
+            </article>
+            <!-- <article class="projects__card reveal">
+                          <h3 class="projects__card-heading">BrainFlix</h3>
+                          <p class="projects__card-text">A full stack video platform with mock upload and playback functionality.</p>
+                      </article> -->
+          </div>
         </div>
       </section>
 
       <!-- Skills -->
       <section class="skills" id="skills">
-        <div class="heading-container reveal">
-          <div class="heading-line"></div>
-          <h2>Skills</h2>
-        </div>
-        <div class="skills__logo-container reveal">
-          <div class="skills__logo-row-left-mask"></div>
-          <div class="skills__logo-row">
-            <div>
-              <span class="skills__logo-wrap">
-                <img
-                  class="skills__logo"
-                  src="./assets/logos/skills/HTML5_logo.png"
-                  alt="html"
-                />
-              </span>
-              <span class="skills__logo-wrap">
-                <img
-                  class="skills__logo"
-                  src="./assets/logos/skills/css_logo.png"
-                  alt="css"
-                />
-              </span>
-              <span class="skills__logo-wrap">
-                <img
-                  class="skills__logo"
-                  src="./assets/logos/skills/JavaScript_logo.png"
-                  alt="js"
-                />
-              </span>
-              <span class="skills__logo-wrap">
-                <img
-                  class="skills__logo"
-                  src="./assets/logos/skills/React-icon.png"
-                  alt="react"
-                />
-              </span>
-              <span class="skills__logo-wrap">
-                <img
-                  class="skills__logo"
-                  src="./assets/logos/skills/Vite.png"
-                  alt="vite"
-                />
-              </span>
-              <span class="skills__logo-wrap">
-                <img
-                  class="skills__logo"
-                  src="./assets/logos/skills/Node.js_logo.png"
-                  alt="node"
-                />
-              </span>
-              <span class="skills__logo-wrap">
-                <img
-                  class="skills__logo"
-                  src="./assets/logos/skills/Express.png"
-                  alt="express"
-                />
-              </span>
-              <span class="skills__logo-wrap">
-                <img
-                  class="skills__logo"
-                  src="./assets/logos/skills/MySQL-Logo.png"
-                  alt="mysql"
-                />
-              </span>
-              <span class="skills__logo-wrap">
-                <img
-                  class="skills__logo"
-                  src="./assets/logos/skills/knex-logo.png"
-                  alt="knex"
-                />
-              </span>
-              <span class="skills__logo-wrap">
-                <img
-                  class="skills__logo"
-                  src="./assets/logos/skills/Git-logo.png"
-                  alt="git"
-                />
-              </span>
+        <div class="ribbon"></div>
+        <div class="skills__content">
+          <div class="heading-container reveal">
+            <div class="heading-line"></div>
+            <h2 class="skills__heading--white">Skills</h2>
+          </div>
+          <div class="skills__container">
+            <div class="skills__section-container reveal">
+              <h3 class="skills__sub-heading">Front-end</h3>
+              <ul class="skills__list">
+                <li class="skills__item">HTML</li>
+                <li class="skills__item">CSS / SASS</li>
+                <li class="skills__item">JavaScript</li>
+                <li class="skills__item">TypeScript</li>
+                <li class="skills__item">React.js</li>
+                <li class="skills__item">Next.js</li>
+              </ul>
             </div>
-            <div>
-              <span class="skills__logo-wrap">
-                <img
-                  class="skills__logo"
-                  src="./assets/logos/skills/HTML5_logo.png"
-                  alt="html"
-                />
-              </span>
-              <span class="skills__logo-wrap">
-                <img
-                  class="skills__logo"
-                  src="./assets/logos/skills/css_logo.png"
-                  alt="css"
-                />
-              </span>
-              <span class="skills__logo-wrap">
-                <img
-                  class="skills__logo"
-                  src="./assets/logos/skills/JavaScript_logo.png"
-                  alt="js"
-                />
-              </span>
-              <span class="skills__logo-wrap">
-                <img
-                  class="skills__logo"
-                  src="./assets/logos/skills/React-icon.png"
-                  alt="react"
-                />
-              </span>
-              <span class="skills__logo-wrap">
-                <img
-                  class="skills__logo"
-                  src="./assets/logos/skills/Vite.png"
-                  alt="vite"
-                />
-              </span>
-              <span class="skills__logo-wrap">
-                <img
-                  class="skills__logo"
-                  src="./assets/logos/skills/Node.js_logo.png"
-                  alt="node"
-                />
-              </span>
-              <span class="skills__logo-wrap">
-                <img
-                  class="skills__logo"
-                  src="./assets/logos/skills/Express.png"
-                  alt="express"
-                />
-              </span>
-              <span class="skills__logo-wrap">
-                <img
-                  class="skills__logo"
-                  src="./assets/logos/skills/MySQL-Logo.png"
-                  alt="mysql"
-                />
-              </span>
-              <span class="skills__logo-wrap">
-                <img
-                  class="skills__logo"
-                  src="./assets/logos/skills/knex-logo.png"
-                  alt="knex"
-                />
-              </span>
-              <span class="skills__logo-wrap">
-                <img
-                  class="skills__logo"
-                  src="./assets/logos/skills/Git-logo.png"
-                  alt="git"
-                />
-              </span>
+            <div class="skills__section-container reveal">
+              <h3 class="skills__sub-heading">Back-end</h3>
+              <ul class="skills__list">
+                <li class="skills__item">Node.js</li>
+                <li class="skills__item">Express.js</li>
+                <li class="skills__item">MySQL</li>
+                <li class="skills__item">Knex.js</li>
+                <li class="skills__item">0Auth</li>
+              </ul>
+            </div>
+            <div class="skills__section-container reveal">
+              <h3 class="skills__sub-heading">Tools</h3>
+              <ul class="skills__list">
+                <li class="skills__item">Git</li>
+              </ul>
             </div>
           </div>
-          <div class="skills__logo-row-right-mask"></div>
-        </div>
-        <div class="skills__container">
-          <div class="skills__section-container reveal">
-            <h3 class="skills__sub-heading">Front-end</h3>
-            <ul class="skills__list">
-              <li class="skills__item">HTML</li>
-              <li class="skills__item">CSS / SASS</li>
-              <li class="skills__item">JavaScript</li>
-              <li class="skills__item">React.js</li>
-            </ul>
-          </div>
-          <div class="skills__section-container reveal">
-            <h3 class="skills__sub-heading">Back-end</h3>
-            <ul class="skills__list">
-              <li class="skills__item">Node.js</li>
-              <li class="skills__item">Express.js</li>
-              <li class="skills__item">MySQL</li>
-              <li class="skills__item">Knex.js</li>
-              <li class="skills__item">0Auth</li>
-            </ul>
-          </div>
-          <div class="skills__section-container reveal">
-            <h3 class="skills__sub-heading">Tools</h3>
-            <ul class="skills__list">
-              <li class="skills__item">Git</li>
-            </ul>
+          <div class="skills__logo-container reveal">
+            <div class="skills__logo-row-left-mask"></div>
+            <div class="skills__logo-row">
+              <div>
+                <span class="skills__logo-wrap">
+                  <img
+                    class="skills__logo"
+                    src="./assets/logos/skills/HTML5_logo.png"
+                    alt="html"
+                  />
+                </span>
+                <span class="skills__logo-wrap">
+                  <img
+                    class="skills__logo"
+                    src="./assets/logos/skills/css_logo.png"
+                    alt="css"
+                  />
+                </span>
+                <span class="skills__logo-wrap">
+                  <img
+                    class="skills__logo"
+                    src="./assets/logos/skills/JavaScript_logo.png"
+                    alt="js"
+                  />
+                </span>
+                <span class="skills__logo-wrap">
+                  <img
+                    class="skills__logo"
+                    src="./assets/logos/skills/React-icon.png"
+                    alt="react"
+                  />
+                </span>
+                <span class="skills__logo-wrap">
+                  <img
+                    class="skills__logo"
+                    src="./assets/logos/skills/Vite.png"
+                    alt="vite"
+                  />
+                </span>
+                <span class="skills__logo-wrap">
+                  <img
+                    class="skills__logo"
+                    src="./assets/logos/skills/Node.js_logo.png"
+                    alt="node"
+                  />
+                </span>
+                <span class="skills__logo-wrap">
+                  <img
+                    class="skills__logo"
+                    src="./assets/logos/skills/Express.png"
+                    alt="express"
+                  />
+                </span>
+                <span class="skills__logo-wrap">
+                  <img
+                    class="skills__logo"
+                    src="./assets/logos/skills/MySQL-Logo.png"
+                    alt="mysql"
+                  />
+                </span>
+                <span class="skills__logo-wrap">
+                  <img
+                    class="skills__logo"
+                    src="./assets/logos/skills/knex-logo.png"
+                    alt="knex"
+                  />
+                </span>
+                <span class="skills__logo-wrap">
+                  <img
+                    class="skills__logo"
+                    src="./assets/logos/skills/Git-logo.png"
+                    alt="git"
+                  />
+                </span>
+              </div>
+              <div>
+                <span class="skills__logo-wrap">
+                  <img
+                    class="skills__logo"
+                    src="./assets/logos/skills/HTML5_logo.png"
+                    alt="html"
+                  />
+                </span>
+                <span class="skills__logo-wrap">
+                  <img
+                    class="skills__logo"
+                    src="./assets/logos/skills/css_logo.png"
+                    alt="css"
+                  />
+                </span>
+                <span class="skills__logo-wrap">
+                  <img
+                    class="skills__logo"
+                    src="./assets/logos/skills/JavaScript_logo.png"
+                    alt="js"
+                  />
+                </span>
+                <span class="skills__logo-wrap">
+                  <img
+                    class="skills__logo"
+                    src="./assets/logos/skills/React-icon.png"
+                    alt="react"
+                  />
+                </span>
+                <span class="skills__logo-wrap">
+                  <img
+                    class="skills__logo"
+                    src="./assets/logos/skills/Vite.png"
+                    alt="vite"
+                  />
+                </span>
+                <span class="skills__logo-wrap">
+                  <img
+                    class="skills__logo"
+                    src="./assets/logos/skills/Node.js_logo.png"
+                    alt="node"
+                  />
+                </span>
+                <span class="skills__logo-wrap">
+                  <img
+                    class="skills__logo"
+                    src="./assets/logos/skills/Express.png"
+                    alt="express"
+                  />
+                </span>
+                <span class="skills__logo-wrap">
+                  <img
+                    class="skills__logo"
+                    src="./assets/logos/skills/MySQL-Logo.png"
+                    alt="mysql"
+                  />
+                </span>
+                <span class="skills__logo-wrap">
+                  <img
+                    class="skills__logo"
+                    src="./assets/logos/skills/knex-logo.png"
+                    alt="knex"
+                  />
+                </span>
+                <span class="skills__logo-wrap">
+                  <img
+                    class="skills__logo"
+                    src="./assets/logos/skills/Git-logo.png"
+                    alt="git"
+                  />
+                </span>
+              </div>
+            </div>
+            <div class="skills__logo-row-right-mask"></div>
           </div>
         </div>
       </section>
 
       <!-- Contact -->
       <section class="contact" id="contact">
-        <div class="heading-container reveal">
-          <div class="heading-line"></div>
-          <h2>Contact</h2>
-        </div>
-        <h3 class="contact__text reveal">Let's make something together!</h3>
-        <a
-          class="contact__email-link"
-          href="mailto:kayahara.christopher@gmail.com"
-          >kayahara.christopher@gmail.com</a
-        >
-        <div class="contact__email-link-underline"></div>
-        <div class="contact__icon-container">
+        <div class="contact__content">
+          <div class="heading-container reveal">
+            <div class="heading-line"></div>
+            <h2>Contact</h2>
+          </div>
+          <h3 class="contact__text reveal">Let's make something together!</h3>
           <a
-            class="contact__link"
-            href="https://www.linkedin.com/in/christopher-kayahara/"
-            target="_blank"
+            class="contact__email-link"
+            href="mailto:kayahara.christopher@gmail.com"
+            >kayahara.christopher@gmail.com</a
           >
-            <img
-              class="contact__icon"
-              src="./assets/icons/linkedin.svg"
-              alt="Linkedin icon"
-            />
-          </a>
-          <a
-            class="contact__link"
-            href="https://github.com/chris-kayahara"
-            target="_blank"
-          >
-            <img
-              class="contact__icon"
-              src="./assets/icons/github.svg"
-              alt="Github icon"
-            />
-          </a>
+          <div class="contact__email-link-underline"></div>
+          <div class="contact__icon-container">
+            <a
+              class="contact__link"
+              href="https://www.linkedin.com/in/christopher-kayahara/"
+              target="_blank"
+            >
+              <img
+                class="contact__icon"
+                src="./assets/icons/linkedin.svg"
+                alt="Linkedin icon"
+              />
+            </a>
+            <a
+              class="contact__link"
+              href="https://github.com/chris-kayahara"
+              target="_blank"
+            >
+              <img
+                class="contact__icon"
+                src="./assets/icons/github.svg"
+                alt="Github icon"
+              />
+            </a>
+          </div>
         </div>
       </section>
 
       <!-- Footer -->
       <footer class="footer">
-        <p class="footer__text">Chris Kayahara | 2023</p>
+        <div class="footer__content">
+          <p class="footer__text">Chris Kayahara | 2023</p>
+        </div>
       </footer>
     </main>
   </body>
