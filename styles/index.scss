@@ -483,6 +483,7 @@
   }
 
   &__card-text {
+    font-weight: 400;
     font-size: 0.875rem;
     margin-top: 1rem;
     margin-bottom: 0;
@@ -503,6 +504,7 @@
   }
 
   &__card-tag {
+    font-weight: 400;
     border: $primary-dark solid 1px;
     border-radius: 0.25rem;
     padding: 0.5rem 0.625rem;
@@ -705,7 +707,7 @@
     font-size: 1.5rem;
     margin-bottom: 3rem;
     text-align: center;
-    font-weight: 100;
+    font-weight: 400;
   }
 
   &__email-link-underline {
