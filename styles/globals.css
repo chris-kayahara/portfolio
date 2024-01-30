@@ -130,7 +130,7 @@ p {
 .ribbon--active {
   animation: ribbon-animation 2s ease-in-out forwards;
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 48rem) {
   .ribbon {
     height: 105%;
   }

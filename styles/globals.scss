@@ -121,7 +121,7 @@ p {
     animation: ribbon-animation 2s ease-in-out forwards;
   }
 
-  @include desktop {
+  @include tablet {
     height: 105%;
   }
 }
