@@ -67,9 +67,6 @@
               <li class="side-nav__item">
                 <a class="side-nav__link" href="#contact">Contact</a>
               </li>
-              <!-- <li class="side-nav__item">
-                                <a href="mailto:kayahara.christopher@gmail.com">kayahara.christopher@gmail.com</a>
-                            </li> -->
             </ul>
           </aside>
         </div>
@@ -81,10 +78,7 @@
       <!-- Hero -->
       <section class="hero">
         <div class="hero__content">
-          <h3 class="hero__name">
-            <!-- <span class="heading-accent">| </span> -->
-            Chris Kayahara
-          </h3>
+          <h3 class="hero__name">Chris Kayahara</h3>
           <h1 class="hero__heading">Software Engineer</h1>
           <div class="hero__arrow">
             <div class="hero__arrow-leader"></div>
@@ -108,16 +102,17 @@
                 src="./assets/images/Chris_Kayahara_Profile.jpg"
                 alt="profile picture of Chris Kayahara"
               />
-              <p class="about__text">
-                Greetings!<br /><br />My name is Chris and I am a multi-faceted
-                professional with a passion for technology and design. With a
-                background in architecture, I am now transitioning to a career
-                in software engineering where I can bring a unique skill set to
-                the table, combining my expertise in design with my technical
-                knowledge. I am excited to continue to grow as a developer and
-                designer, and to create innovative solutions that merge
-                creativity and technology.
-              </p>
+              <div class="about__text-container">
+                <p class="about__text">Hi, my name is</p>
+                <p class="about__text-bold">Chris Kayahara</p>
+                <p class="about__text">
+                  I am a multi-faceted professional with a passion for
+                  technology and design. With a background in architecture, I
+                  have now transitioning to a career in software engineering
+                  where I can bring a unique skill set to the table, combining
+                  my expertise in design with my technical knowledge.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -131,18 +126,71 @@
             <h2 class="projects__heading--white">Projects</h2>
           </div>
           <div class="projects__card-container">
+            <!-- Linebox Website -->
             <article class="projects__card reveal">
-              <a href="https://temporun.netlify.app/">
+              <a
+                class="projects__card-image-link"
+                href="https://linebox.vercel.app/developments"
+                target="”_blank”"
+              >
+                <div class="projects__card-image-shadow">
+                  <img
+                    class="projects__card-image"
+                    src="./assets/images/linebox-developments-page.png"
+                    alt="Linebox Website Screenshot"
+                  />
+                </div>
+              </a>
+              <a
+                href="https://linebox.vercel.app/developments"
+                target="”_blank”"
+                class="projects__card-link"
+                id="tempo-run-link"
+              >
+                <h3 class="projects__card-heading">Linebox Website</h3>
+                <div class="projects__card-link-arrow"></div>
+              </a>
+              <p class="projects__card-text">
+                Freelance commissioned additions and edits to a small
+                architecture firm in Ottawa. Provided design and development. To
+                be launched February 2024.
+              </p>
+              <div class="projects__card-tag-list">
+                <div class="projects__card-tag">NextJS</div>
+                <div class="projects__card-tag">Typescript</div>
+                <div class="projects__card-tag">Emotion CSS</div>
+                <div class="projects__card-tag">Storyblok CMS</div>
+                <div class="projects__card-tag">Vercel</div>
+              </div>
+              <div class="projects__card-icon-container">
+                <a
+                  href="https://linebox.vercel.app/developments"
+                  target="”_blank”"
+                  ><img
+                    class="projects__card-icon"
+                    src="./assets/icons/external-link.svg"
+                    alt="External Link Icon"
+                /></a>
+              </div>
+            </article>
+            <!-- Tempo Run -->
+            <article class="projects__card reveal">
+              <a
+                class="projects__card-image-link"
+                href="https://temporun.netlify.app/"
+                target="”_blank”"
+              >
                 <div class="projects__card-image-shadow">
                   <img
                     class="projects__card-image"
                     src="./assets/images/tempo-run.png"
-                    alt="Pokemon Team Generator screenshot"
+                    alt="Tempo Run screenshot"
                   />
                 </div>
               </a>
               <a
                 href="https://temporun.netlify.app/"
+                target="”_blank”"
                 class="projects__card-link"
                 id="tempo-run-link"
               >
@@ -153,54 +201,78 @@
                 A React application which allows Spotify users to create jogging
                 playlists and run to the beat of their music.
               </p>
-            </article>
-            <article class="projects__card reveal">
-              <div class="projects__card-image-shadow">
-                <img
-                  class="projects__card-image"
-                  src="./assets/images/mapbook-demo.png"
-                  alt="MapBook screenshot"
-                />
+              <div class="projects__card-tag-list">
+                <div class="projects__card-tag">React</div>
+                <div class="projects__card-tag">Typescript</div>
+                <div class="projects__card-tag">Sass</div>
+                <div class="projects__card-tag">Spotify Web API</div>
+                <div class="projects__card-tag">OAuth</div>
               </div>
-              <h3 class="projects__card-heading">MapBook</h3>
+              <div class="projects__card-icon-container">
+                <a
+                  href="https://github.com/chris-kayahara/tempo-run"
+                  target="”_blank”"
+                  ><img
+                    class="projects__card-icon"
+                    src="./assets/icons/github-line.svg"
+                    alt="Github Icon"
+                /></a>
+                <a href="https://temporun.netlify.app/" target="”_blank”"
+                  ><img
+                    class="projects__card-icon"
+                    src="./assets/icons/external-link.svg"
+                    alt="External Link Icon"
+                /></a>
+              </div>
+            </article>
+            <!-- MapBook -->
+            <article class="projects__card reveal">
+              <a
+                class="projects__card-image-link"
+                href="https://github.com/chris-kayahara/mapbook-client"
+                target="”_blank”"
+              >
+                <div class="projects__card-image-shadow">
+                  <img
+                    class="projects__card-image"
+                    src="./assets/images/mapbook-demo.png"
+                    alt="MapBook screenshot"
+                  />
+                </div>
+              </a>
+              <a
+                href="https://github.com/chris-kayahara/mapbook-client"
+                target="”_blank”"
+                class="projects__card-link"
+                id="tempo-run-link"
+              >
+                <h3 class="projects__card-heading">MapBook</h3>
+                <div class="projects__card-link-arrow"></div>
+              </a>
               <p class="projects__card-text">
                 A full stack app that allows users to create their own
                 scrapbook-style gallery with image descriptions, paired with a
                 map snippet based on the photo’s GPS data.
               </p>
-            </article>
-            <article class="projects__card reveal">
-              <div class="projects__card-image-shadow">
-                <img
-                  class="projects__card-image"
-                  src="./assets/images/instock-warehouse.png"
-                  alt="Instock screenshot"
-                />
+              <div class="projects__card-tag-list">
+                <div class="projects__card-tag">React</div>
+                <div class="projects__card-tag">JavaScript</div>
+                <div class="projects__card-tag">Sass</div>
+                <div class="projects__card-tag">MapBook API</div>
+                <div class="projects__card-tag">Express</div>
+                <div class="projects__card-tag">MySQL</div>
               </div>
-              <h3 class="projects__card-heading">Instock</h3>
-              <p class="projects__card-text">
-                A full stack inventory management system, featuring MySQL
-                database and full React app front-end.
-              </p>
-            </article>
-            <article class="projects__card reveal">
-              <div class="projects__card-image-shadow">
-                <img
-                  class="projects__card-image"
-                  src="./assets/images/planetjumper-demo.png"
-                  alt="Planet Jumper screenshot"
-                />
+              <div class="projects__card-icon-container">
+                <a
+                  href="https://github.com/chris-kayahara/mapbook-client"
+                  target="”_blank”"
+                  ><img
+                    class="projects__card-icon"
+                    src="./assets/icons/github-line.svg"
+                    alt="Github Icon"
+                /></a>
               </div>
-              <h3 class="projects__card-heading">Planet Jumper</h3>
-              <p class="projects__card-text">
-                A children's planetary education page which gathers planet data
-                from Solar System OpenData web API.
-              </p>
             </article>
-            <!-- <article class="projects__card reveal">
-                          <h3 class="projects__card-heading">BrainFlix</h3>
-                          <p class="projects__card-text">A full stack video platform with mock upload and playback functionality.</p>
-                      </article> -->
           </div>
         </div>
       </section>
@@ -215,19 +287,26 @@
           </div>
           <div class="skills__container">
             <div class="skills__section-container reveal">
-              <h3 class="skills__sub-heading">Front-end</h3>
+              <div class="skills__icon-container">
+                <img class="skills__icon" src="./assets/icons/code.svg" />
+              </div>
+              <h3 class="skills__sub-heading">Languages</h3>
               <ul class="skills__list">
                 <li class="skills__item">HTML</li>
                 <li class="skills__item">CSS / SASS</li>
                 <li class="skills__item">JavaScript</li>
                 <li class="skills__item">TypeScript</li>
-                <li class="skills__item">React.js</li>
-                <li class="skills__item">Next.js</li>
+                <li class="skills__item">SQL</li>
               </ul>
             </div>
             <div class="skills__section-container reveal">
-              <h3 class="skills__sub-heading">Back-end</h3>
+              <div class="skills__icon-container">
+                <img class="skills__icon" src="./assets/icons/server.svg" />
+              </div>
+              <h3 class="skills__sub-heading">Frameworks & Libraries</h3>
               <ul class="skills__list">
+                <li class="skills__item">React.js</li>
+                <li class="skills__item">Next.js</li>
                 <li class="skills__item">Node.js</li>
                 <li class="skills__item">Express.js</li>
                 <li class="skills__item">MySQL</li>
@@ -236,9 +315,15 @@
               </ul>
             </div>
             <div class="skills__section-container reveal">
+              <div class="skills__icon-container">
+                <img class="skills__icon" src="./assets/icons/tool.svg" />
+              </div>
               <h3 class="skills__sub-heading">Tools</h3>
               <ul class="skills__list">
                 <li class="skills__item">Git</li>
+                <li class="skills__item">Github</li>
+                <li class="skills__item">VSCode</li>
+                <li class="skills__item">Netlify</li>
               </ul>
             </div>
           </div>
@@ -439,7 +524,7 @@
       <!-- Footer -->
       <footer class="footer">
         <div class="footer__content">
-          <p class="footer__text">Chris Kayahara | 2023</p>
+          <p class="footer__text">Chris Kayahara | 2024</p>
         </div>
       </footer>
     </main>

@@ -73,7 +73,7 @@ h1 {
 .heading-line {
   width: 3px;
   height: 0px;
-  background-color: rgb(240, 40, 26);
+  background-color: #f0281a;
   transition: height 1s ease-in-out;
 }
 @media screen and (min-width: 48rem) {
@@ -112,7 +112,7 @@ p {
 }
 
 .heading-accent {
-  color: rgb(240, 40, 26);
+  color: #f0281a;
 }
 
 .ribbon {
@@ -120,7 +120,7 @@ p {
   width: 0%;
   height: 100%;
   padding-bottom: 4rem;
-  top: -1rem;
+  top: -1.5rem;
   bottom: 0;
   left: 0;
   z-index: -1;
@@ -129,6 +129,11 @@ p {
 }
 .ribbon--active {
   animation: ribbon-animation 2s ease-in-out forwards;
+}
+@media screen and (min-width: 80rem) {
+  .ribbon {
+    height: 105%;
+  }
 }
 
 @keyframes ribbon-animation {
